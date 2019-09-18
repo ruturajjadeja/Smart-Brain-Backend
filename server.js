@@ -50,8 +50,8 @@ app.post('/imageurl', (req, res) => {
 
 // // Load hash from your password DB.
 
-app.listen(3000, () => {
-  console.log('App is running');
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`App is running ${process.env.PORT}`);
 });
 
 /*
